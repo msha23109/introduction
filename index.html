@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>柳浦ひかり — 自己紹介</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card" role="main">
+    <aside class="avatar-wrap">
+      <div class="avatar" aria-hidden="true">
+        <!-- playful laptop+cat illustration (SVG) -->
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="cute cat icon">
+          <defs>
+            <linearGradient id="catGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#0f0f10"/>
+              <stop offset="100%" stop-color="#1e2636"/>
+            </linearGradient>
+            <style>
+              .pixel {
+                shape-rendering: crispEdges;
+              }
+            </style>
+          </defs>
+        
+          <!-- body -->
+          <rect x="60" y="90" width="80" height="60" fill="url(#catGrad)" class="pixel"/>
+          <!-- head -->
+          <rect x="70" y="50" width="60" height="50" fill="url(#catGrad)" class="pixel"/>
+          <!-- ears -->
+          <rect x="70" y="40" width="14" height="14" fill="url(#catGrad)" class="pixel"/>
+          <rect x="116" y="40" width="14" height="14" fill="url(#catGrad)" class="pixel"/>
+          <!-- eyes -->
+          <rect x="82" y="68" width="10" height="10" fill="#06b6d4" class="pixel"/>
+          <rect x="108" y="68" width="10" height="10" fill="#7c3aed" class="pixel"/>
+          <!-- nose -->
+          <rect x="96" y="80" width="8" height="4" fill="#ff88aa" class="pixel"/>
+          <!-- tail -->
+          <rect x="138" y="96" width="8" height="34" fill="url(#catGrad)" class="pixel"/>
+          <!-- cheeks -->
+          <rect x="76" y="80" width="6" height="4" fill="#ffb6c1" class="pixel"/>
+          <rect x="118" y="80" width="6" height="4" fill="#ffb6c1" class="pixel"/>
+        </svg>
+        
+      </div>
+
+      <div style="text-align:center;margin-top:6px">
+        <h1>柳浦 ひかり</h1>
+        <div class="handle">クリエイティブ × ウェブ</div>
+        <div class="role">デザイン・フロントエンド・ブランディング</div>
+      </div>
+
+      <div style="width:100%;margin-top:12px">
+        <div class="meta">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 12a4 4 0 100-8 4 4 0 000 8z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          東京（リモート可）
+        </div>
+      </div>
+    </aside>
+
+    <section class="content">
+      <div class="section">
+        <p class="bio">
+          こんにちは、柳浦ひかりです。ウェブとデザインを軸に、使う人に寄り添う体験作りをしています。シンプルで美しく、ほんの少し遊び心があるプロダクトが好きです。コーヒーと猫と新しい技術に目がありません。
+        </p>
+
+        <div class="flex-row">
+          <div class="skills" aria-hidden>
+            <span class="skill">UI/UX</span>
+            <span class="skill">HTML/CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Figma</span>
+            <span class="skill">Branding</span>
+          </div>
+
+          <div class="cta">
+            <button class="btn btn-primary" onclick="window.open('#contact','_self')">Contact</button>
+            <button class="btn btn-ghost" onclick="document.getElementById('cv').scrollIntoView({behavior:'smooth'})">More</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="cv" class="section">
+        <h3>最新の取り組み</h3>
+        <p>
+          小さなチームでプロダクトデザインから実装まで一気通貫で携わっています。ユーザーの声を大切に、改善のサイクルを速く回すことが信条です。
+        </p>
+
+        <div class="flex-row">
+          <div>
+            <strong>趣味</strong>
+            <div class="muted">イラスト・写真・カフェ巡り</div>
+          </div>
+          <div>
+            <strong>学んでいること</strong>
+            <div class="muted">アクセシビリティとパフォーマンス最適化</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact" class="section">
+        <h3>Contact</h3>
+        <p class="muted">ご依頼・お仕事の相談はこちらへ（プレースホルダ）</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="mailto:hikari@example.com">メール</a>
+          <a class="btn btn-ghost" href="#">Twitter</a>
+          <a class="btn btn-ghost" href="#">Portfolio</a>
+        </div>
+      </div>
+
+      <footer>
+        <div>Made with ✨</div>
+        <div>柳浦 ひかり — 2025</div>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
